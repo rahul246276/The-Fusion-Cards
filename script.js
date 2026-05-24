@@ -1,9 +1,9 @@
 /* ============================================================
-   THE FUSION CARDS — Main JavaScript
+   THE FUSION CARDS â€” Main JavaScript
    Description: Navigation, animations, form validation, utilities
    ============================================================ */
 
-/* ── Navbar Scroll Behavior ── */
+/* â”€â”€ Navbar Scroll Behavior â”€â”€ */
 (function initNavbar() {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;
@@ -19,7 +19,7 @@
   onScroll(); // run on load in case page is already scrolled
 })();
 
-/* ── Active Nav Link ── */
+/* â”€â”€ Active Nav Link â”€â”€ */
 (function setActiveNavLink() {
   const page = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
@@ -30,7 +30,7 @@
   });
 })();
 
-/* ── Mobile Menu Toggle ── */
+/* â”€â”€ Mobile Menu Toggle â”€â”€ */
 (function initMobileMenu() {
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -62,7 +62,7 @@
   });
 })();
 
-/* ── Scroll-to-top Button ── */
+/* â”€â”€ Scroll-to-top Button â”€â”€ */
 (function initScrollTop() {
   const btn = document.querySelector('.scroll-top');
   if (!btn) return;
@@ -76,7 +76,7 @@
   });
 })();
 
-/* ── Intersection Observer — Fade-up animations ── */
+/* â”€â”€ Intersection Observer â€” Fade-up animations â”€â”€ */
 (function initFadeUp() {
   const els = document.querySelectorAll('.fade-up');
   if (!els.length) return;
@@ -101,7 +101,7 @@
   els.forEach(el => observer.observe(el));
 })();
 
-/* ── Counter Animation ── */
+/* â”€â”€ Counter Animation â”€â”€ */
 (function initCounters() {
   const counters = document.querySelectorAll('[data-count]');
   if (!counters.length) return;
@@ -133,7 +133,7 @@
   counters.forEach(el => observer.observe(el));
 })();
 
-/* ── Contact Form Validation ── */
+/* â”€â”€ Contact Form Validation â”€â”€ */
 (function initContactForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
@@ -224,7 +224,7 @@
   });
 })();
 
-/* ── Gallery Lightbox (simple) ── */
+/* â”€â”€ Gallery Lightbox (simple) â”€â”€ */
 (function initGallery() {
   const items = document.querySelectorAll('.gallery-item');
   if (!items.length) return;
@@ -243,7 +243,7 @@
       background:rgba(255,255,255,0.1); border:none; border-radius:8px;
       width:44px; height:44px; color:white; cursor:pointer;
       font-size:1.2rem; display:flex; align-items:center; justify-content:center;
-    ">✕</button>
+    ">âœ•</button>
     <div id="lb-content" style="
       max-width:90vw; max-height:90vh;
       border-radius:12px; overflow:hidden;
@@ -293,7 +293,7 @@
   });
 })();
 
-/* ── Smooth scroll for anchor links ── */
+/* â”€â”€ Smooth scroll for anchor links â”€â”€ */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
@@ -304,7 +304,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ── Navbar: add initial transparent state ── */
+/* â”€â”€ Navbar: add initial transparent state â”€â”€ */
 (function initNavbarTransparency() {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;

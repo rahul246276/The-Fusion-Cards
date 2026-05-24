@@ -1,13 +1,13 @@
 /* ============================================================
-   THE FUSION CARDS — Main Stylesheet
+   THE FUSION CARDS â€” Main Stylesheet
    Author: Generated for The Fusion Cards
    Description: Premium plastic card manufacturer website
    ============================================================ */
 
-/* ── Google Fonts Import ── */
+/* â”€â”€ Google Fonts Import â”€â”€ */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-/* ── CSS Variables ── */
+/* â”€â”€ CSS Variables â”€â”€ */
 :root {
   --navy:        #0B1D3A;
   --navy-light:  #142850;
@@ -43,7 +43,7 @@
   --max-w:      1200px;
 }
 
-/* ── Reset & Base ── */
+/* â”€â”€ Reset & Base â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -62,7 +62,7 @@ img { max-width: 100%; height: auto; display: block; }
 a  { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
-/* ── Utilities ── */
+/* â”€â”€ Utilities â”€â”€ */
 .container {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -111,7 +111,7 @@ ul { list-style: none; }
 .text-center .section-subtitle { margin: 0 auto; }
 .text-center .section-label { justify-content: center; }
 
-/* ── Buttons ── */
+/* â”€â”€ Buttons â”€â”€ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -168,7 +168,7 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
-/* ── Navigation ── */
+/* â”€â”€ Navigation â”€â”€ */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -299,7 +299,7 @@ ul { list-style: none; }
   display: block;
 }
 
-/* ── Hero Section ── */
+/* â”€â”€ Hero Section â”€â”€ */
 .hero {
   position: relative;
   min-height: calc(100vh - 76px);
@@ -542,7 +542,7 @@ ul { list-style: none; }
 .hero-tag-2 { bottom: 80px; right: -10px; animation-delay: 2s; }
 .hero-tag-3 { bottom: 20px; left: 0; animation-delay: 4s; }
 
-/* ── Page Hero (inner pages) ── */
+/* â”€â”€ Page Hero (inner pages) â”€â”€ */
 .page-hero {
   background: var(--navy);
   padding: 160px 24px 80px;
@@ -591,7 +591,7 @@ ul { list-style: none; }
 .breadcrumb a:hover { color: var(--gold-light); }
 .breadcrumb span { color: var(--gold-light); }
 
-/* ── About Preview ── */
+/* â”€â”€ About Preview â”€â”€ */
 .about-preview {
   background: var(--off-white);
 }
@@ -620,6 +620,12 @@ ul { list-style: none; }
   overflow: hidden;
 }
 .about-image-wrap .img-placeholder svg { opacity: 0.4; }
+.about-image-wrap .img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 /* Floating stat cards on image */
 .about-float-card {
@@ -686,7 +692,7 @@ ul { list-style: none; }
   background-size: 12px;
 }
 
-/* ── Services Grid ── */
+/* â”€â”€ Services Grid â”€â”€ */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -766,7 +772,7 @@ ul { list-style: none; }
   border-radius: 100px;
 }
 
-/* ── Products Grid ── */
+/* â”€â”€ Products Grid â”€â”€ */
 .products-section { background: var(--off-white); }
 
 .products-grid {
@@ -835,7 +841,7 @@ ul { list-style: none; }
   line-height: 1.65;
 }
 
-/* ── Why Choose Us ── */
+/* â”€â”€ Why Choose Us â”€â”€ */
 .why-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -888,7 +894,7 @@ ul { list-style: none; }
 }
 .why-card p { font-size: 0.86rem; color: var(--text-muted); line-height: 1.7; }
 
-/* ── CTA Section ── */
+/* â”€â”€ CTA Section â”€â”€ */
 .cta-section {
   background: linear-gradient(135deg, #0B1D3A 0%, #1A3566 50%, #0D2247 100%);
   position: relative;
@@ -920,7 +926,7 @@ ul { list-style: none; }
 }
 .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
-/* ── Gallery ── */
+/* â”€â”€ Gallery â”€â”€ */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -982,7 +988,7 @@ ul { list-style: none; }
   transform: scale(1.06);
 }
 
-/* ── Contact ── */
+/* â”€â”€ Contact â”€â”€ */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
@@ -1136,7 +1142,7 @@ ul { list-style: none; }
 }
 .form-success.show { display: block; }
 
-/* ── About Page Specific ── */
+/* â”€â”€ About Page Specific â”€â”€ */
 .mission-vision-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1232,7 +1238,7 @@ ul { list-style: none; }
 }
 .team-card span { font-size: 0.82rem; color: var(--text-muted); }
 
-/* ── Footer ── */
+/* â”€â”€ Footer â”€â”€ */
 .footer {
   background: var(--navy);
   color: rgba(255,255,255,0.7);
@@ -1320,7 +1326,7 @@ ul { list-style: none; }
 .footer-bottom a { color: rgba(255,255,255,0.55); }
 .footer-bottom a:hover { color: var(--gold-light); }
 
-/* ── Scroll-to-top ── */
+/* â”€â”€ Scroll-to-top â”€â”€ */
 .scroll-top {
   position: fixed;
   bottom: 32px;
@@ -1341,7 +1347,7 @@ ul { list-style: none; }
 .scroll-top.show { opacity: 1; transform: translateY(0); }
 .scroll-top:hover { background: #1447B5; transform: translateY(-2px); }
 
-/* ── Floating WhatsApp & Call Buttons ── */
+/* â”€â”€ Floating WhatsApp & Call Buttons â”€â”€ */
 .floating-buttons {
   position: fixed;
   bottom: 32px;
@@ -1421,7 +1427,7 @@ ul { list-style: none; }
   border-right-color: var(--navy);
 }
 
-/* ── Animations ── */
+/* â”€â”€ Animations â”€â”€ */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
@@ -1432,7 +1438,7 @@ ul { list-style: none; }
   transform: translateY(0);
 }
 
-/* ── Responsive ── */
+/* â”€â”€ Responsive â”€â”€ */
 @media (max-width: 1024px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1455,7 +1461,12 @@ ul { list-style: none; }
   .mock-card-3 { top: 0; left: 0; }
   .hero-tag { font-size: 0.72rem; padding: 8px 12px; }
   .about-preview-grid { grid-template-columns: 1fr; gap: 48px; }
-  .about-image-wrap { display: none; }
+  .about-image-wrap {
+    display: block;
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .announcement-bar {
@@ -1568,6 +1579,14 @@ ul { list-style: none; }
   .mock-card-1 { top: 36px; left: 30px; }
   .mock-card-2 { top: 18px; left: 15px; }
   .hero-tag { display: none; }
+  .about-preview-grid { gap: 32px; }
+  .about-image-wrap .img-placeholder { aspect-ratio: 4/3; }
+  .about-float-card {
+    position: static;
+    margin-top: 12px;
+    padding: 12px 14px;
+    box-shadow: var(--shadow-sm);
+  }
   .products-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
@@ -1591,7 +1610,7 @@ ul { list-style: none; }
   }
 }
 
-/* ── Services Page ── */
+/* â”€â”€ Services Page â”€â”€ */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1758,7 +1777,7 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
-/* ── Products Page ── */
+/* â”€â”€ Products Page â”€â”€ */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1870,7 +1889,7 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.5);
 }
 
-/* ── Gallery Page ── */
+/* â”€â”€ Gallery Page â”€â”€ */
 .gallery-filters {
   display: flex;
   justify-content: center;
@@ -1959,7 +1978,7 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.7);
 }
 
-/* ── Contact Page ── */
+/* â”€â”€ Contact Page â”€â”€ */
 .contact-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -2131,12 +2150,66 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
-/* ── Blog Page ── */
+/* â”€â”€ Blog Page â”€â”€ */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 56px;
+}
+
+.vlog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.vlog-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.vlog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(26,86,219,0.2);
+}
+
+.vlog-media {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--navy);
+  overflow: hidden;
+}
+
+.vlog-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vlog-content {
+  padding: 24px;
+}
+
+.vlog-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.vlog-content p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
 }
 
 .blog-card {
@@ -2318,7 +2391,7 @@ ul { list-style: none; }
   margin-bottom: 24px;
 }
 
-/* ── Responsive Updates ── */
+/* â”€â”€ Responsive Updates â”€â”€ */
 @media (max-width: 1024px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
@@ -2326,6 +2399,7 @@ ul { list-style: none; }
   .advantage-grid { grid-template-columns: repeat(2, 1fr); }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
   .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  .vlog-grid { grid-template-columns: repeat(2, 1fr); }
   .faq-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
 }
@@ -2337,6 +2411,7 @@ ul { list-style: none; }
   .advantage-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
+  .vlog-grid { grid-template-columns: 1fr; }
   .contact-form-wrap { padding: 24px; }
 }
 
